@@ -6,7 +6,7 @@ public class Rabbit extends Animal implements Pet{
         this.name = name;
     }
     public Rabbit(){
-        this("");
+        this("Koyanshyk");
     }
     @Override
     public String getName(){
@@ -18,10 +18,10 @@ public class Rabbit extends Animal implements Pet{
     }
     @Override
     public void eat(){
-        System.out.println("Rabbits eat carrots");
+        System.out.println(this.name + " eat carrots");
     }
     @Override
     public void play(){
-        System.out.println("Rabbits are playing");
+        System.out.println(this.name + " is playing");
     }
 }
