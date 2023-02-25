@@ -5,6 +5,10 @@ public class Fish extends Animal implements Pet{
         super(0);
         this.name = name;
     }
+
+    public Fish(){
+        this("Nemo");
+    }
     @Override
     public String getName(){
         return name;
@@ -19,7 +23,7 @@ public class Fish extends Animal implements Pet{
     }
     @Override 
     public void walk(){
-        System.out.println("Fishes can not walk and they do not have legs :)");
+        System.out.println("Fishes they do not have legs and can not walk :)");
     }
     @Override
     public void eat(){
